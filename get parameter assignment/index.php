@@ -10,7 +10,6 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    // Check if form is submitted via GET method
     if (isset($_GET['firstname'], $_GET['lastname'], $_GET['age'])) {
         $firstname = htmlspecialchars($_GET['firstname']);
         $lastname = htmlspecialchars($_GET['lastname']);
@@ -25,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         echo "<p>Current date: " . date("Y-m-d") . "</p>";
         echo "</div>";
     } else {
-        // Display the form
         echo "<div class='form-container'>";
         echo "<form action='" . htmlspecialchars($_SERVER["PHP_SELF"]) . "' method='GET'>";
         echo "<label for='firstname'>First Name:</label>";
