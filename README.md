@@ -1,2 +1,0 @@
-# sql-assignment
-# sql-assignment
